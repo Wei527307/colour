@@ -34,6 +34,9 @@ from .diagrams import (plot_chromaticity_diagram_CIE1931,
                        plot_sds_in_chromaticity_diagram_CIE1960UCS,
                        plot_sds_in_chromaticity_diagram_CIE1976UCS)
 from .corresponding import plot_corresponding_chromaticities_prediction
+from .gamut import (plot_multi_segment_maxima_gamut_boundaries_in_hue_segments,
+                    plot_multi_segment_maxima_gamut_boundaries,
+                    plot_Jab_samples_in_segment_maxima_gamut_boundary)
 from .geometry import quad, grid, cube
 from .graph import plot_automatic_colour_conversion_graph
 from .models import (
@@ -90,6 +93,11 @@ __all__ += [
     'plot_sds_in_chromaticity_diagram_CIE1976UCS'
 ]
 __all__ += ['plot_corresponding_chromaticities_prediction']
+__all__ += [
+    'plot_multi_segment_maxima_gamut_boundaries_in_hue_segments',
+    'plot_multi_segment_maxima_gamut_boundaries',
+    'plot_Jab_samples_in_segment_maxima_gamut_boundary'
+]
 __all__ += ['plot_automatic_colour_conversion_graph']
 __all__ += ['quad', 'grid', 'cube']
 __all__ += [

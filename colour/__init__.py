@@ -26,6 +26,7 @@ Sub-packages
 -   difference: Colour difference computations.
 -   examples: Examples for the sub-packages.
 -   graph: Graph for automatic colour conversions.
+-   gamut: Gamut mapping computations.
 -   io: Input / output objects for reading and writing data.
 -   models: Colour models.
 -   notation: Colour notation systems.
@@ -127,6 +128,8 @@ from .models import (
     primaries_whitepoint, sd_to_aces_relative_exposure_values, sRGB_to_XYZ,
     uv_to_Luv, uv_to_UCS, xyY_to_XYZ, xyY_to_xy, xy_to_Luv_uv, xy_to_UCS_uv,
     xy_to_XYZ, xy_to_xyY)
+from .gamut import (GAMUT_BOUNDARY_DESCRIPTOR_METHODS,
+                    gamut_boundary_descriptor)
 from .corresponding import (
     BRENEMAN_EXPERIMENTS, BRENEMAN_EXPERIMENTS_PRIMARIES_CHROMATICITIES,
     CORRESPONDING_CHROMATICITIES_PREDICTION_MODELS, CorrespondingColourDataset,
@@ -265,6 +268,9 @@ __all__ += [
     'sd_to_aces_relative_exposure_values', 'sRGB_to_XYZ', 'uv_to_Luv',
     'uv_to_UCS', 'xyY_to_XYZ', 'xyY_to_xy', 'xy_to_Luv_uv', 'xy_to_UCS_uv',
     'xy_to_XYZ', 'xy_to_xyY'
+]
+__all__ += [
+    'GAMUT_BOUNDARY_DESCRIPTOR_METHODS', 'gamut_boundary_descriptor'
 ]
 __all__ += [
     'BRENEMAN_EXPERIMENTS', 'BRENEMAN_EXPERIMENTS_PRIMARIES_CHROMATICITIES',
